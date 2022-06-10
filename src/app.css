@@ -1,0 +1,133 @@
+main {
+  width: 90vw;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 4vw;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  background: var(--record-bg-color);
+  font-size: 1rem;
+}
+
+.records {
+  border: 1px solid var(--text-color);
+  width: 21%;
+  margin: 0;
+  padding: 0;
+}
+.records ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg-color);
+  font-size: 1rem;
+}
+.records ol li {
+  border-bottom: 0.5px solid var(--text-color);
+  padding: 15px 5px;
+  background: var(--record-bg-color);
+  cursor: pointer;
+}
+.records ol li:last-child {
+  border: none;
+}
+
+.records ol li.clickit {
+  background-color: var(--main-background-color);
+}
+.records ol li:before {
+  background: var(--record-bg-color);
+}
+.label_head {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  background: var(--head-bg-color);
+  color: var(--main-bg-color);
+  font-weight: 900;
+}
+.label_head.nocenter {
+  width: 100%;
+  text-align: left;
+}
+
+.btn {
+  height: 25px;
+  font-size: 1rem;
+  font-weight: 1000;
+  color: var(--head-bg-color);
+  border: none;
+  margin: 0;
+  margin-right: 5px;
+  padding: 5px;
+  background: var(--main-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:first-child {
+  margin-left: 20px;
+}
+.btn.not_active {
+  color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+  background: transparent;
+}
+.btn strong {
+  margin-right: 5px;
+}
+
+.details {
+  padding: 15px 10px;
+  background: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.record_detail {
+  width: 56%;
+}
+
+.annotations {
+  border: 2px solid var(--border-color);
+  width: 21%;
+}
+.annotations ul {
+  list-style-type: none;
+  color: var(--record-color);
+  background: var(--main-bg-color);
+  margin: 0;
+  padding: 15px;
+  font-size: 0.7rem;
+}
+
+.annotations ul li {
+  margin: 0;
+  padding: 3px;
+}
+ul li > span {
+  margin-left: 20px;
+}
+ul li > span:nth-child(2) {
+  font-weight: 900;
+}
+ul li > span:last-child {
+  color: var(--head-bg-color);
+  cursor: pointer;
+}
+ul li > span:last-child:hover {
+  color: var(--text-color);
+}
+@media (max-width: 500px) {
+  .records,
+  .record_detail,
+  .annotations {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

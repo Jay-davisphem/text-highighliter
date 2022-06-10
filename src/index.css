@@ -1,0 +1,29 @@
+/* Variables */
+:root {
+  --text-color: #8c8c8c; /* Battleship Grey */
+  --record-color: #000000; /* Black */
+  --record-bg-color: #ebe9f3; /* Magnolia */
+  --head-bg-color: #5344c7; /* Ocean Blue */
+  --main-bg-color: #ffffff; /* white */
+  --border-color: #a6b2c9; /* Cadet Blue Crayola */
+  /* Misc colors  */
+
+  --underline-color: red;
+  --highlight-bg-color: #d9c38a; /* Ecru */
+  --highlight-name-color: #635e50; /* Ebony */
+  --highlight-type-color: #faf8f2; /* Baby Powder */
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  border: 1px solid red;
+  flex-direction: column;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+}
