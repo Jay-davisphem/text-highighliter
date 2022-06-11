@@ -7,7 +7,7 @@ function Annotations() {
       <LabelHead>Annotations</LabelHead>
       <ul>
         {list.map((a, i) => (
-          <AnnotationItem name={a} type={i}/>
+          <AnnotationItem name={a} key={i} type={i} />
         ))}
       </ul>
     </div>

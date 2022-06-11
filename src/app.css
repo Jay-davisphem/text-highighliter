@@ -13,6 +13,11 @@ main {
   font-size: 1rem;
 }
 
+.blurred {
+  opacity: 0.4;
+  pointer-events: none;
+  background: var(--border-color);
+}
 .records {
   border: 1px solid var(--text-color);
   width: 21%;
@@ -89,9 +94,14 @@ main {
   padding: 15px 10px;
   background: var(--main-bg-color);
   color: var(--text-color);
+  line-height: 2;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .record_detail {
+  display: flex;
+  flex-direction: column;
   width: 56%;
 }
 
@@ -113,18 +123,18 @@ main {
   margin: 0;
   padding: 3px;
 }
-ul li > span,
-ul li > img {
+ul li > span {
   margin-left: 20px;
 }
 ul li > span:nth-child(2) {
   font-weight: 900;
 }
-ul li img {
+ul li span:last-child {
   color: var(--head-bg-color);
   cursor: pointer;
+  font-size: 1rem;
 }
-ul li img:hover {
+ul li span:hover {
   color: var(--text-color);
 }
 .high {
@@ -137,7 +147,7 @@ ul li img:hover {
   margin-left: 0;
 }
 .high > strong {
-  color: var(--text-color);
+  color: var(--highlight-name-color);
 }
 .details img {
   display: none;
@@ -166,7 +176,7 @@ ul li img:hover {
   margin-bottom: 10px;
 }
 .modal button {
-  font-size: 1.6rem;
+  font-size: 1em;
   padding: 8px 20px;
   background: var(--record-bg-color);
   border: 1px solid var(--head-bg-color);
@@ -184,6 +194,13 @@ ul li img:hover {
     width: 80%;
     margin: 0 auto;
   }
+  .modal {
+    bottom: 80%;
+    font-size: 1rem;
+  }
+  .modal button {
+    padding: 0.2em 0.5em;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
@@ -191,5 +208,10 @@ ul li img:hover {
   .annotations {
     width: 40%;
     margin: 0 auto;
+  }
+
+  .modal {
+    bottom: 70%;
+    font-size: 1.2rem;
   }
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Category from "./Category";
 import LabelHead from "./LabelHead";
-import Button from './Button'
+import Button from "./Button";
 
 function RecordDetail() {
   const [active, setActive] = useState("");
@@ -19,8 +19,20 @@ function RecordDetail() {
   return (
     <div className="record_detail">
       <LabelHead center={false}>
-        <Button cls='btn' active={active} handleActive={handleActive} type='PERSON' oth='1' />
-        <Button cls='btn' active={active2} handleActive={handleActive2} type='ORG' oth='2'/>
+        <Button
+          cls="btn"
+          active={active}
+          handleActive={handleActive}
+          type="PERSON"
+          oth="1"
+        />
+        <Button
+          cls="btn"
+          active={active2}
+          handleActive={handleActive2}
+          type="ORG"
+          oth="2"
+        />
       </LabelHead>
       <Category />
     </div>
