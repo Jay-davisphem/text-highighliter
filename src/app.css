@@ -109,20 +109,22 @@ main {
 }
 
 .annotations ul li {
+  display: flex;
   margin: 0;
   padding: 3px;
 }
-ul li > span {
+ul li > span,
+ul li > img {
   margin-left: 20px;
 }
 ul li > span:nth-child(2) {
   font-weight: 900;
 }
-ul li > span:last-child {
+ul li img {
   color: var(--head-bg-color);
   cursor: pointer;
 }
-ul li > span:last-child:hover {
+ul li img:hover {
   color: var(--text-color);
 }
 .high {
