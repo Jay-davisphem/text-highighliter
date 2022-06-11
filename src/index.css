@@ -12,12 +12,12 @@
   --highlight-bg-color: #d9c38a; /* Ecru */
   --highlight-name-color: #635e50; /* Ebony */
   --highlight-type-color: #faf8f2; /* Baby Powder */
+  --danger-color: red;
 }
 
 body {
   display: flex;
   height: 100vh;
-  border: 1px solid red;
   flex-direction: column;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

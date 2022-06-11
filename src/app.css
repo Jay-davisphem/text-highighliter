@@ -17,7 +17,6 @@ main {
   border: 1px solid var(--text-color);
   width: 21%;
   margin: 0;
-  padding: 0;
 }
 .records ol {
   list-style-type: none;
@@ -82,8 +81,11 @@ main {
 .btn strong {
   margin-right: 5px;
 }
-
+.btn small {
+  font-size: 0.8rem;
+}
 .details {
+  margin-top: 0;
   padding: 15px 10px;
   background: var(--main-bg-color);
   color: var(--text-color);
@@ -123,11 +125,69 @@ ul li > span:last-child {
 ul li > span:last-child:hover {
   color: var(--text-color);
 }
+.high {
+  margin: 0;
+  margin-bottom: 2px;
+  border: none;
+  background: var(--highlight-bg-color);
+}
+.high:first-child {
+  margin-left: 0;
+}
+.high > strong {
+  color: var(--text-color);
+}
+.details img {
+  display: none;
+}
+.details img.img {
+  display: inline;
+  width: 10px;
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
+.modal {
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  border: 1px solid var(--text-color);
+  padding: 30px 35px;
+  position: relative;
+  margin: 0 auto;
+  bottom: 40%;
+  background: var(--main-bg-color);
+  justify-content: center;
+}
+.modal div {
+  margin-bottom: 10px;
+}
+.modal button {
+  font-size: 1.6rem;
+  padding: 8px 20px;
+  background: var(--record-bg-color);
+  border: 1px solid var(--head-bg-color);
+  border-radius: 5px;
+}
+.modal button:last-child {
+  background: var(--danger-color);
+  color: var(--main-bg-color);
+  margin-left: 40px;
+}
 @media (max-width: 500px) {
   .records,
   .record_detail,
   .annotations {
     width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .records,
+  .annotations {
+    width: 40%;
     margin: 0 auto;
   }
 }

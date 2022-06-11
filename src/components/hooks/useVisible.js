@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+
 function useVisible(initialIsVisible) {
   const [isVisible, setIsVisible] = useState(initialIsVisible);
   const ref = useRef(null);
@@ -10,9 +11,9 @@ function useVisible(initialIsVisible) {
   };
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
+    document.addEventListener('click', handleClickOutside, true);
     return () => {
-      document.removeEventListener("click", handleClickOutside, true);
+      document.removeEventListener('click', handleClickOutside, true);
     };
   }, []);
 
