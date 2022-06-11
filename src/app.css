@@ -1,7 +1,7 @@
 main {
   width: 90vw;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 4vw;
   padding: 5px;
   display: flex;
@@ -161,14 +161,14 @@ ul li span:hover {
 }
 .modal {
   display: flex;
-  width: 40%;
+  width: 25%;
   flex-wrap: wrap;
   font-size: 1.6rem;
   border: 1px solid var(--text-color);
-  padding: 30px 35px;
+  padding: 30px;
   position: relative;
   margin: 0 auto;
-  bottom: 40%;
+  bottom: 60%;
   background: var(--main-bg-color);
   justify-content: center;
 }
@@ -188,6 +188,10 @@ ul li span:hover {
   margin-left: 40px;
 }
 @media (max-width: 500px) {
+  main {
+    margin-top: 0;
+    row-gap: 20px;
+  }
   .records,
   .record_detail,
   .annotations {
@@ -195,8 +199,9 @@ ul li span:hover {
     margin: 0 auto;
   }
   .modal {
-    bottom: 80%;
+    bottom: 100%;
     font-size: 1rem;
+    width: 50%;
   }
   .modal button {
     padding: 0.2em 0.5em;
@@ -211,7 +216,8 @@ ul li span:hover {
   }
 
   .modal {
-    bottom: 70%;
+    bottom: 90%;
     font-size: 1.2rem;
+    width: 40%;
   }
 }
