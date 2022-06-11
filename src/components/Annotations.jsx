@@ -1,13 +1,15 @@
 import AnnotationItem from "./AnnotationItem";
+import useLocalStorage from './hooks/useLocalStorage'
 import LabelHead from "./LabelHead";
 function Annotations() {
-  const list = [1, 2, 3, 4, 5, 6, 7];
+  const [anno, setAnno] = useLocalStorage('highObj')
+  console.log(anno)
   return (
     <div className="annotations">
       <LabelHead>Annotations</LabelHead>
       <ul>
-        {list.map((a, i) => (
-          <AnnotationItem name={a} key={i} type={i} />
+        {anno.map(({name, type}, i) => (
+          <AnnotationItem name={name} key={i} type={type} />
         ))}
       </ul>
     </div>

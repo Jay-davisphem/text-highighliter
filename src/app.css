@@ -40,7 +40,8 @@ main {
   border: none;
 }
 
-.records ol li.clickit {
+.records ol li.clickit,
+.records ol li:hover {
   background-color: var(--main-background-color);
 }
 .records ol li:before {
@@ -115,12 +116,13 @@ main {
   background: var(--main-bg-color);
   margin: 0;
   padding: 15px;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 .annotations ul li {
   display: flex;
   margin: 0;
+  align-items: flex-start;
   padding: 3px;
 }
 ul li > span {
@@ -133,6 +135,8 @@ ul li span:last-child {
   color: var(--head-bg-color);
   cursor: pointer;
   font-size: 1rem;
+  align-self: flex-end;
+  margin-top: -5px;
 }
 ul li span:hover {
   color: var(--text-color);
